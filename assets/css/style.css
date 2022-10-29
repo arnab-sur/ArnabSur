@@ -45,6 +45,13 @@
   --z-modal: 1000;
 }
 
+/* #loading {
+  width: 100vw;
+  height: 100vh; 
+  background: rgb(68, 192, 230) url('../img/loader.gif') no-repeat center;
+  z-index: 99999;
+} */
+
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
   :root {
@@ -139,13 +146,14 @@ button {
 
 .section_title {
   font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-3);
 }
 
-.section_subtitle {
+/* .section_subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
-}
+} */
 
 .section_title,
 .section_subtitle {
@@ -434,7 +442,14 @@ button {
 .qualification_subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0-25);
+}
+
+.qualification_score {
+  display: inline-block;
+  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-0-25);
+  /* color: rgb(118, 242, 242); */
 }
 
 .qualification_calendar {
@@ -848,9 +863,9 @@ button {
     padding: 6rem 0 2rem;
   }
 
-  .section_subtitle {
+  /* .section_subtitle {
     margin-bottom: 4rem;
-  }
+  } */
 
   .header {
     top: 0;
@@ -937,7 +952,7 @@ button {
     margin: 0 var(--mb-1);
   }
 
-  .qualification_sections {
+  .qualification_secs {
     grid-template-columns: 0.5fr;
   }
 
