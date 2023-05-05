@@ -31,6 +31,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Arnab Sur</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/b3332bc5eb.js" crossorigin="anonymous"></script>
     <script src="//code.tidio.co/zvaag0fleipfgcgl3tps5hzfvmgh793t.js" async></script>
   </head>
@@ -167,7 +170,7 @@
       <h2 class="section_title">Who is Arnab?</h2>
       <!-- <span class="section_subtitle"></span> -->
       <div class="about_container container grid">
-        <img src="./assets/img/photo1.jpeg" alt="" class="about_img gradient-border" />
+        <img src="./assets/img/photo1.png" alt="" id="aboutImg" class="about_img gradient-border-box" />
         <div class="about_data">
           <p class="about_description">
             Hello! 👋 I'm Arnab, a pre-final year engineering student pursuing
@@ -261,14 +264,14 @@
           <!-- Work Experience -->
           <div id="work" class="qualification_content qualification-inactive" data-content id="work">
             
-            <!-- Freelancer  -->
+            <!-- work ex   -->
             <div class="qualification_data">
               <div>
-                <h3 class="qualification_title">Freelancer</h3>
-                <span class="qualification_subtitle">Fiverr.</span>
+                <h3 class="qualification_title">Looking For Internship An Opportunity</h3>
+                <span class="qualification_subtitle"></span>
                 <div class="qualification_calendar">
                   <i class="uil uil-calendar-alt"></i>
-                  November 2022 - Present
+                  Present
                 </div>
               </div>
 
@@ -384,22 +387,14 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <span class="single_skill_icon">
-                  <img src="https://img.icons8.com/fluency/40/000000/my-sql.png"/>
+                  <i class="fa-solid fa-database"></i>
                 </span>
-                <h3 class="skills_name">MySQL</h3>
+                <h3 class="skills_name">SQL</h3>
               </div>
               <div class="skills_bar"></div>
             </div>
 
-            <div class="skills_data">
-              <div class="skills_titles">
-                <span class="single_skill_icon">
-                  <img src="https://img.icons8.com/external-flat-juicy-fish/40/000000/external-c-coding-and-development-flat-flat-juicy-fish.png"/>
-                </span>
-                <h3 class="skills_name">C++</h3>
-              </div>
-              <div class="skills_bar"></div>
-            </div>
+            
           </div>
         </div>
 
@@ -554,7 +549,7 @@
       <div class="portfolio_container container swiper-container swiper mySwiper">
         <div class="swiper-wrapper">
 
-          <!-- Project 1 -->
+          <!-- Project -->
           <div class="portfolio_content grid swiper-slide">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_oRzPyWc5ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -563,7 +558,7 @@
                 MindCare
               </h3>
               <p class="portfolio_description">
-                MindCare is a online mental healthcare solution. It provides access to chat with specialists and other patients anonymously, get suggestion to book an appointment of specific doctors to consult with via video calls. Prescriptions of the patient will be stored for further treatments.
+                MindCare is an online mental healthcare solution. It provides access to chat with specialists and other patients anonymously, get suggestion to book an appointment of specific doctors to consult with via video calls. Prescriptions of the patient will be stored for further treatments.
               </p>
               <a href="https://mind-care.netlify.app" class="button button-flex button-small portfolio_button" target="_blank">
                 Check out
@@ -572,7 +567,25 @@
             </div>
           </div>
 
-          <!-- Project 2 -->
+          <!-- Project -->
+          <div class="portfolio_content grid swiper-slide">
+            <img src="./assets/img/befit.png" alt="" class="portfolio_img" width="90%" height="70%">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                Befit
+              </h3>
+              <p class="portfolio_description">
+                Befit is an online solution to your fitness journey at home, where you cann learn exeercises with functionality to choose exercise categories and specific muscle groups according to your needs. It is Prepared to browse 1000+ exercises with examples. You can get exercise details, try similar exercises and play related videos from youtube and get trained from it.
+              </p>
+              <a href="https://befit-fitness.netlify.app" class="button button-flex button-small portfolio_button" target="_blank">
+                Check out
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project -->
           <div class="portfolio_content grid swiper-slide">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cmIwZ9nBM_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -612,7 +625,26 @@
             </div>
           </div>
 
-          <!-- Project 4 -->
+          <!-- Project 3 -->
+          <div class="portfolio_content grid swiper-slide">
+            <img src="./assets/img/tic-tac-toe-ai-vs-human.png" alt="" class="portfolio_img" width="90%" height="70%">
+          
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                Tic-Tac-Toe : AI vs Human
+              </h3>
+              <p class="portfolio_description">
+                An AI vs Human Tic-Tac-Toe Player Application. Try if you can win!
+              </p>
+              <a href="https://tic-tac-toe-human-vs-ai.netlify.app/" class="button button-flex button-small portfolio_button"
+                target="_blank">
+                Check out
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project -->
           <div class="portfolio_content grid swiper-slide">
             <img
               src="./assets/img/robot.png"
@@ -633,7 +665,7 @@
             </div>
           </div>
 
-          <!-- Project 5 -->
+          <!-- Project -->
           <div class="portfolio_content grid swiper-slide">
             <img
               src="./assets/img/picedit.png"

@@ -132,6 +132,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  pointer-events: none;
 }
 
 button {
@@ -306,6 +307,7 @@ button {
 
 .home_blob-img {
   width: 170px;
+  pointer-events: none;
 }
 
 .home_data {
@@ -387,6 +389,42 @@ button {
   border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
+  pointer-events: none;
+}
+
+.gradient-border-box {
+  --border-size: 3px;
+  --border-angle: 0turn;
+
+  background-image: conic-gradient(from var(--border-angle),
+      #213,
+      #112 50%,
+      #213),conic-gradient(from var(--border-angle), transparent 20%, rgb(20, 133, 232), rgb(121, 15, 162));
+
+  background-size: calc(100% - (var(--border-size) * 2)) 
+                  calc(100% - (var(--border-size) * 2))
+                  , cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 4s linear infinite normal;
+
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  
+  #aboutImg:hover {
+    animation-play-state: paused;
+  }
+  
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 
 .about_description {
@@ -578,6 +616,7 @@ button {
   width: 256px;
   border-radius: 0.5rem;
   justify-self: center;
+  pointer-events: none;
 }
 
 .portfolio_title {
@@ -829,6 +868,7 @@ button {
 
   .portfolio-img {
     width: 200px;
+    pointer-events: none;
   }
 }
 
@@ -860,6 +900,7 @@ button {
   .home_img {
     order: 1;
     justify-self: center;
+    pointer-events: none;
   }
 
   .about_container,
@@ -944,6 +985,7 @@ button {
 
   .home_blob-img {
     width: 170px;
+    pointer-events: none;
   }
 
   .home_scroll {
@@ -960,6 +1002,7 @@ button {
 
   .about_img {
     width: 350px;
+    pointer-events: none;
   }
 
   .about_description {
@@ -989,6 +1032,7 @@ button {
 
   .portfolio_img {
     width: 320px;
+    pointer-events: none;
   }
 
   .portfolio_content {
